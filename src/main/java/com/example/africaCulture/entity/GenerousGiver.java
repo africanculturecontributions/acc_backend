@@ -9,9 +9,20 @@ public class GenerousGiver {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    private String fullName;
-    private String phoneNumber;
+
     private String emailAddress;
+    private String phoneNumber;
+    private String passWord;
+
+    public GenerousGiver() {
+    }
+
+    public GenerousGiver(Long id, String emailAddress, String phoneNumber, String passWord) {
+        this.id = id;
+        this.emailAddress = emailAddress;
+        this.phoneNumber = phoneNumber;
+        this.passWord = passWord;
+    }
 
     public Long getId() {
         return id;
@@ -19,15 +30,6 @@ public class GenerousGiver {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public GenerousGiver() {
-    }
-
-    public GenerousGiver(String emailAddress, String fullName, String phoneNumber) {
-        this.emailAddress = emailAddress;
-        this.fullName = fullName;
-        this.phoneNumber = phoneNumber;
     }
 
     public String getEmailAddress() {
@@ -38,14 +40,6 @@ public class GenerousGiver {
         this.emailAddress = emailAddress;
     }
 
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -54,12 +48,21 @@ public class GenerousGiver {
         this.phoneNumber = phoneNumber;
     }
 
+    public String getPassWord() {
+        return passWord;
+    }
+
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
+    }
+
     @Override
     public String toString() {
         return "GenerousGiver{" +
-                "emailAddress='" + emailAddress + '\'' +
-                ", fullName='" + fullName + '\'' +
+                "id=" + id +
+                ", emailAddress='" + emailAddress + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
+                ", passWord='" + passWord + '\'' +
                 '}';
     }
 }

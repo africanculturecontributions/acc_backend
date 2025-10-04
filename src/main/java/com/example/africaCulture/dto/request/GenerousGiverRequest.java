@@ -1,9 +1,10 @@
 package com.example.africaCulture.dto.request;
 
 public class GenerousGiverRequest {
-    private String fullName;
-    private String phoneNumber;
+
     private String emailAddress;
+    private String phoneNumber;
+    private String passWord;
 
     public String getEmailAddress() {
         return emailAddress;
@@ -13,12 +14,12 @@ public class GenerousGiverRequest {
         this.emailAddress = emailAddress;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getPassWord() {
+        return passWord;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
     }
 
     public String getPhoneNumber() {

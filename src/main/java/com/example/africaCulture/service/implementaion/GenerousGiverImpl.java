@@ -18,7 +18,7 @@ public class GenerousGiverImpl implements GenerousGiverService {
     @Override
     public GenerousGiverResponse registerGenerousGiver(GenerousGiverRequest generousGiverRequest) {
         GenerousGiver generousGiver = new GenerousGiver();
-        generousGiver.setFullName(generousGiverRequest.getFullName());
+        generousGiver.setPassWord(generousGiverRequest.getPassWord());
         generousGiver.setPhoneNumber(generousGiverRequest.getPhoneNumber());
         generousGiver.setEmailAddress(generousGiverRequest.getEmailAddress());
         GenerousGiver newGenerousGiver =   generousGiverRepository.save(generousGiver);
