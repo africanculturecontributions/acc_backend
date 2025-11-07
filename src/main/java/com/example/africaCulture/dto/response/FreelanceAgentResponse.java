@@ -1,9 +1,9 @@
 package com.example.africaCulture.dto.response;
 
-public class ProjectOwnerResponse {
+public class FreelanceAgentResponse {
     private String message;
 
-    public ProjectOwnerResponse(String message) {
+    public FreelanceAgentResponse(String message) {
         this.message = message;
     }
 
@@ -17,7 +17,7 @@ public class ProjectOwnerResponse {
 
     @Override
     public String toString() {
-        return "ProjectOwnerResponse{" +
+        return "FreelanceAgentResponse{" +
                 "message='" + message + '\'' +
                 '}';
     }
