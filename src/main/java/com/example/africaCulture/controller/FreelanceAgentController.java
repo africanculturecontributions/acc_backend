@@ -21,7 +21,7 @@ public class FreelanceAgentController {
 
 
     @PostMapping("/register-freelance-agent")
-    public FreelanceAgentResponse registerGenerous(@RequestBody FreelanceAgentRequest freelanceAgentRequest){
+    public FreelanceAgentResponse registerFreelanceAgent(@RequestBody FreelanceAgentRequest freelanceAgentRequest){
         return   freelanceAgentService.createAgentFreelance(freelanceAgentRequest);
     }
 }

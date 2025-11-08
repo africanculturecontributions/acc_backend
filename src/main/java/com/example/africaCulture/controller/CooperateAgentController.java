@@ -19,7 +19,7 @@ public class CooperateAgentController {
 
 
     @PostMapping("/register-cooperate-agent")
-    public CooperateAgentResponse registerGenerous(@RequestBody CooperateAgentRequest cooperateAgentRequest){
+    public CooperateAgentResponse registerCooperateAgent(@RequestBody CooperateAgentRequest cooperateAgentRequest){
         return   cooperateAgentService.createCooperateAgent(cooperateAgentRequest);
     }
 }
